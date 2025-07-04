@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Solar System - Three.js</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin: 0; background: #111; color: #fff; font-family: sans-serif; }
+    #container { width: 100vw; height: 100vh; overflow: hidden; position: relative; }
+    #controls {
+      position: absolute; top: 10px; left: 10px; background: rgba(20,20,20,0.85);
+      padding: 16px; border-radius: 8px; z-index: 10; min-width: 220px;
+    }
+    #controls label { display: block; margin: 8px 0 2px; }
+    #controls input[type="range"] { width: 100%; }
+    #pauseBtn { margin-top: 12px; width: 100%; }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+  <div id="controls"></div>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
